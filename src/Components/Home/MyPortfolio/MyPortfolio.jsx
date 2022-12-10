@@ -24,7 +24,7 @@ const MyPortfolio = () => {
                 Used Mobile Deal
               </h2>
               <a
-                href='https://used-mobile-deal.web.app/'
+                href='https://used-mobile-deal.web.app/' target='_blank' rel="noreferrer"
                 className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
               >
                 Website
@@ -43,7 +43,7 @@ const MyPortfolio = () => {
                 WebLogig Solutions
               </h2>
               <a
-                href='https://weblogic-solution.web.app/'
+                href='https://weblogic-solution.web.app/' target='_blank' rel="noreferrer"
                 className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
               >
                 Website
@@ -62,7 +62,7 @@ const MyPortfolio = () => {
                 E-PathShala
               </h2>
               <a
-                href='https://e-pathshala-authentication.web.app/home'
+                href='https://e-pathshala-authentication.web.app/home' target='_blank' rel="noreferrer"
                 className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
               >
                 Website
