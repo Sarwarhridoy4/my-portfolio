@@ -1,6 +1,5 @@
 import React from "react";
 import icon from "../../../assets/cloud-arrow-down-solid.svg";
-import Resume from "../../../assets/Sarwar's_Resume.pdf";
 const MyBanner = () => {
   return (
     <section className='bg-white dark:bg-gray-900'>
@@ -74,7 +73,7 @@ const MyBanner = () => {
           </div>
 
           <div className='buttons fllex'>
-            <a href={Resume} download='Resume'>
+            <a href='https://drive.google.com/file/d/1A3Go9SF16olXwTZusTeGi4wWDyy6kYGk/view?usp=share_link' target='_blank' rel="noreferrer">
               <button className='flex items-center px-4 py-2 mt-8 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80'>
                 <img className='w-8' src={icon} alt='downlod-resume' />
 
