@@ -6,7 +6,7 @@ const MyPortfolio = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     axios
-      .get("../../../../public/Data/Projects.json")
+      .get("https://raw.githubusercontent.com/Sarwarhridoy4/my-portfolio/main/public/Data/Projects.json")
       .then((data) => {
         const projectsdata = data.data;
         console.log(projectsdata);

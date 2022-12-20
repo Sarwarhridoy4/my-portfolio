@@ -3,20 +3,23 @@
         "id": 1,
         "name":"Used Mobile Deal",
         "image":"https://i.ibb.co/CwPHk0d/1.png",
+        "website":"https://used-mobile-deal.web.app/",
         "ss":["Coming Soon"],
         "des":"Coming Soon"
     },
     {
         "id": 2,
-        "name":"Used Mobile Deal",
-        "image":"https://i.ibb.co/CwPHk0d/1.png",
+        "name":"WebLogic Solution",
+        "image":"https://i.ibb.co/g7smMYg/2.png",
+        "website":"https://weblogic-solution.web.app/",
         "ss":["Coming Soon"],
         "des":"Coming Soon"
     },
     {
-        "id": 2,
-        "name":"Used Mobile Deal",
-        "image":"https://i.ibb.co/CwPHk0d/1.png",
+        "id": 3,
+        "name":"E-PathShala",
+        "image":"https://i.ibb.co/wNp9P5t/3.png",
+        "website":"https://e-pathshala-authentication.web.app/home",
         "ss":["Coming Soon"],
         "des":"Coming Soon"
     }
