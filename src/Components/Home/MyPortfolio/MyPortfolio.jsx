@@ -1,6 +1,19 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+
 
 const MyPortfolio = () => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get("../../../../public/Data/Projects.json")
+      .then((data) => {
+        const projectsdata = data.data;
+        console.log(projectsdata);
+        setProjects(projectsdata);
+        
+      });
+  }, []);
   return (
     <section className='bg-white dark:bg-gray-900'>
       <div className='container px-6 py-10 mx-auto'>
