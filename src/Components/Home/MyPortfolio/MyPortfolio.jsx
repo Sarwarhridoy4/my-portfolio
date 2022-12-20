@@ -4,12 +4,13 @@ import React, { useEffect, useState } from "react";
 
 const MyPortfolio = () => {
   const [projects, setProjects] = useState([]);
+  console.log(projects);
   useEffect(() => {
     axios
       .get("https://raw.githubusercontent.com/Sarwarhridoy4/my-portfolio/main/public/Data/Projects.json")
       .then((data) => {
         const projectsdata = data.data;
-        console.log(projectsdata);
+        // console.log(projectsdata);
         setProjects(projectsdata);
         
       });
@@ -26,62 +27,28 @@ const MyPortfolio = () => {
         </p>
 
         <div className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3'>
-          <div
+          {
+            projects.map((project,i)=> <div key={i}
             className='overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group'
             style={{
-              backgroundImage: `url("https://i.ibb.co/CwPHk0d/1.png")`,
+              backgroundImage: `url(${project?.image})`,
             }}
           >
             <div className='flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100'>
               <h2 className='mt-4 text-2xl font-semibold text-white capitalize'>
-                Used Mobile Deal
+                {project?.name}
               </h2>
               <a
-                href='https://used-mobile-deal.web.app/' target='_blank' rel="noreferrer"
+                href={`${project?.website}`} target='_blank' rel="noreferrer"
                 className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
               >
-                Website
+                WEBSITE
               </a>
             </div>
-          </div>
+          </div>)
+         }
 
-          <div
-            className='overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group'
-            style={{
-              backgroundImage: `url("https://i.ibb.co/g7smMYg/2.png")`,
-            }}
-          >
-            <div className='flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100'>
-              <h2 className='mt-4 text-2xl font-semibold text-white capitalize'>
-                WebLogig Solutions
-              </h2>
-              <a
-                href='https://weblogic-solution.web.app/' target='_blank' rel="noreferrer"
-                className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
-              >
-                Website
-              </a>
-            </div>
-          </div>
-
-          <div
-            className='overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group'
-            style={{
-              backgroundImage: `url("https://i.ibb.co/wNp9P5t/3.png")`,
-            }}
-          >
-            <div className='flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100'>
-              <h2 className='mt-4 text-2xl font-semibold text-white capitalize'>
-                E-PathShala
-              </h2>
-              <a
-                href='https://e-pathshala-authentication.web.app/home' target='_blank' rel="noreferrer"
-                className='mt-2 text-lg tracking-wider text-blue-400 uppercase '
-              >
-                Website
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div className='flex items-center justify-center'>
