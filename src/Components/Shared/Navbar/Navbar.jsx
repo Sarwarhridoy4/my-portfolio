@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DarkMode from "../../../DarkMode/DarkMode";
 
 const Navbar = () => {
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
           >
             Ask Me
           </Link>
+          <DarkMode></DarkMode>
         </div>
       </nav>
     </div>
