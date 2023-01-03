@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link to='/' className="block mt-4 lg:inline-block lg:mt-0 dark:text-teal-500 text-black  mr-4">Home</Link>
           <Link
             to='/ask-me' className="block mt-4 lg:inline-block lg:mt-0 dark:text-teal-500 text-black  mr-4">Ask-Me</Link>
-                  <Link to='/contact-me' className="block mt-4 lg:inline-block lg:mt-0 dark:text-teal-500 text-black ">Contact</Link>
+                  
                   <DarkMode></DarkMode>
         </div>
       </div>
