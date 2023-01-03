@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const DarkMode = () => {
-    const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-      setTheme('dark');
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
     }
-    else {
-      setTheme('light');
-    }
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -23,11 +23,14 @@ const DarkMode = () => {
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
-    return (
-        <button onClick={handleThemeSwitch} class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-    Light/Dark
-</button>
-    );
+  return (
+    <Link
+      onClick={handleThemeSwitch}
+      className=' ml-5 block mt-4 lg:inline-block lg:mt-0 text-teal-500 hover:text-teal-500 mr-4'
+    >
+      Light/Dark
+    </Link>
+  );
 };
 
 export default DarkMode;
