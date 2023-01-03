@@ -10,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white text-black dark:bg-gray-800 dark:text-white flex items-center justify-between flex-wrap p-6">
+    <nav className="bg-blue-600 text-black dark:bg-gray-800 dark:text-white flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link to='/' className="font-semibold text-xl tracking-tight text-black dark:text-white">Sarwar Hossain</Link>
       </div>
