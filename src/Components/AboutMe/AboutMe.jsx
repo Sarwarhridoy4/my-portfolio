@@ -1,6 +1,8 @@
 import React from 'react';
 import './AboutMe.css';
 import photo from './../../assets/photo.jpg'
+import Skills from './Skills/Skills';
+
 
 const AboutMe = () => {
   return (
@@ -31,7 +33,10 @@ const AboutMe = () => {
             />
           </div>
         </div>
-      </div>
+          </div>
+          <div className="skills">
+              <Skills></Skills>
+          </div>
     </div>
   );
 };
