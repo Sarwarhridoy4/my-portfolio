@@ -1,0 +1,43 @@
+.bg-gray-200 {
+    background-color: #edf2f7;
+  }
+  
+  .py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .lg\:px-32 {
+    @media (min-width: 640px) {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .lg\:block {
+    @media (min-width: 640px) {
+      display: block;
+    }
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
