@@ -2,7 +2,10 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div className="flex flex-wrap justify-center mb-4 mt-36">
+    <div className='mt-20'>
+      <h2 className="text-3xl leading-9 font-extrabold dark:text-white tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Skills I Gain..</h2>
+        <div className="flex flex-wrap justify-center mb-4 mt-36">
+      
       <div className="w-1/2 md:w-1/4 p-4 text-center">
         <img src="https://i.ibb.co/wc8pnZk/html-css.png" alt="HTML & CSS icon" className="w-20 h-20 mx-auto mb-4 animate-bounce" />
         <p className="text-lg font-semibold text-gray-700 mb-2">
@@ -53,6 +56,7 @@ Since its release, React has seen widespread adoption and has become a staple of
 Express.js is a web application framework for Node.js that provides a range of features to make it easier to build web applications. It is designed to be flexible and easy to use, and is often used as the back-end for web applications built with Node.js. Express.js provides a set of APIs that allow developers to set up routes, handle requests, and manage responses for their web applications. It is also often used to handle tasks such as parsing request bodies and handling file uploads.
         </p>
       </div>
+    </div>
     </div>
   );
 };
