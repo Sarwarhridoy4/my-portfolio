@@ -1,10 +1,9 @@
 import React from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 const AskMe = () => {
   const [state, handleSubmit] = useForm("mnqyqkyq");
-  const navigate = useNavigate();
+  
   if (state.succeeded) {
     return toast.success('Successfully created!');
     
